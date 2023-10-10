@@ -18,6 +18,8 @@ public class StudentController {
 
     private final StudentService studentService;
 
+    // 이게 게임
+
     @PostMapping("/student")
     public CreateResponseDto createStudent(@RequestBody CreateRequestDto createRequestDto) {
         return studentService.createStudent(createRequestDto);
